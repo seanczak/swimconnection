@@ -13,13 +13,14 @@
 <body>
 
 <!-- Navigation -->
-    <nav class="navbar navbar-expand-md navbar-dark bg-dark fixed-top">
+     <nav class="navbar navbar-expand-md navbar-dark bg-dark fixed-top">
       <a class="navbar-brand" href="{{ url_for('input') }}">Swim Connection</a>
 
       
     </nav>
     <br>
     <br>
+
 
 
 <!-- Page Content -->
@@ -29,7 +30,7 @@
         <!-- Blog Entries Column -->
         <div class="col-md-8">
 
-          <h1 class="my-4">Find Colleges
+          <h1 class="my-4">College Finder Example
 
           </h1>
 
@@ -37,33 +38,29 @@
           <div class="card mb-4">
             <img class="card-img-top" src="https://www.enjoy-swimming.com/wp-content/uploads/butterfly-stroke-1.jpg" alt="Card image cap">
             <div class="card-body">
-              <h3 class="card-title">Please fill out the following...</h3>
+              <h3 class="card-title">This sprint free/butterflyer went to Indiana</h3>
 
 
-<h6 class="card-title">Or try one of these examples...</h6>
+
+ 
+ 
+ 
+
+ 
 <br>
-<a href="/indiana" class="btn btn-primary">Division 1 (Indiana)</a>  
-<a href="/hendrix" class="btn btn-primary">Division 3 (Hendrix)</a> 
-
-<a href="/cameron" class="btn btn-primary">Cameron</a>  
-<a href="/sean" class="btn btn-primary">Sean</a> 
-<br>
-<br>
-
 <!-- gender -->
 
 <h5 class="card-title">Enter your gender...
 </h5>
-
 <form action ="{{ url_for('output') }}" method='POST' id='times'>
 
 <div class="custom-control custom-radio">
-  <input type="radio" class="custom-control-input" value="Female" id="defaultChecked" name="gender" checked>
+  <input type="radio" class="custom-control-input" value="Female" id="defaultChecked" name="gender" >
   <label class="custom-control-label" for="defaultChecked">Female</label>
 </div>
 
 <div class="custom-control custom-radio">
-  <input type="radio" class="custom-control-input" value="Male" id="defaultUnchecked" name="gender">
+  <input type="radio" class="custom-control-input" value="Male" id="defaultUnchecked" name="gender" checked>
   <label class="custom-control-label" for="defaultUnchecked">Male</label>
 </div>
 
@@ -71,6 +68,11 @@
 
 <br>
 
+
+
+
+
+<br>
 
 
 <!-- times -->
@@ -81,15 +83,15 @@
 
 <p>Example time format: "4:18.22"</p>
 
-<form action ="{{ url_for('output') }}" method='POST' id='times'>
   
+
 <div class="form-group">
     <label for="inputsm">50Y Freestyle</label>
-    <input class="form-control input-sm" id="inputsm" name="_50_FR" type="text">
+    <input class="form-control input-sm" id="inputsm" name="_50_FR" type="text"  value="19.36">
   </div>  
   <div class="form-group">
     <label for="inputsm">100Y Freestyle</label>
-    <input class="form-control input-sm" id="inputsm" name="_100_FR" type="text">
+    <input class="form-control input-sm" id="inputsm" name="_100_FR" type="text"  value="41.99">
   </div>   
   <div class="form-group">
     <label for="inputsm">200Y Freestyle</label>
@@ -105,7 +107,7 @@
   </div>   
   <div class="form-group">
     <label for="inputsm">1650Y Freestyle</label>
-    <input class="form-control input-sm" id="inputsm" name="_1650_FR" type="text">
+    <input class="form-control input-sm" id="inputsm" name="_1650_FR" type="text" >
   </div>   
   <div class="form-group">
     <label for="inputsm">100Y Backstroke</label>
@@ -113,7 +115,7 @@
   </div>   
   <div class="form-group">
     <label for="inputsm">200Y Backstroke</label>
-    <input class="form-control input-sm" id="inputsm" name="_200_BK" type="text">
+    <input class="form-control input-sm" id="inputsm" name="_200_BK" type="text" >
   </div>   
   <div class="form-group">
     <label for="inputsm">100Y Breaststroke</label>
@@ -125,7 +127,7 @@
   </div>   
   <div class="form-group">
     <label for="inputsm">100Y Butterfly</label>
-    <input class="form-control input-sm" id="inputsm" name="_100_FL" type="text">
+    <input class="form-control input-sm" id="inputsm" name="_100_FL" type="text"  value="46.76">
   </div>   
   <div class="form-group">
     <label for="inputsm">200Y Butterfly</label>
@@ -140,21 +142,14 @@
     <input class="form-control input-sm" id="inputsm" name="_400_IM" type="text">
   </div>    
 
+
 <input  type="submit" class="btn btn-primary" value="Go! &rarr;">
  </form>    
 
-
-
-
-          
+              
           
             
 </div>
-</div>
-</div>
+          </div>
+    </div>
 
-
-
-
-</body>
-</html>
